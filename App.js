@@ -4,11 +4,14 @@ import { StyleSheet,  View } from 'react-native';
 import { Login } from './components/Login';
 import { RecruiterOrLookForJob } from './components/RecruiterOrLookForJob';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-  const  AwesomeProject=()=> {
+
+const Stack = createNativeStackNavigator();
+
+export const  AwesomeProject=()=> {
   
   return (<Login/>)
-
   }
 
 
@@ -22,3 +25,4 @@ const styles = StyleSheet.create({
   },
   
 });
+export default AwesomeProject
